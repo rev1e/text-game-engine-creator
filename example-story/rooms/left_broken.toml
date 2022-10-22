@@ -1,0 +1,11 @@
+text = """
+You see a broken door...
+"""
+
+[[choice]]
+text = "Go back"
+to = "center_broken"
+
+[[choice]]
+text = "Go through broken door"
+to = "secret_room"

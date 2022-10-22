@@ -1,0 +1,15 @@
+text = """
+You see a door...
+"""
+
+[[choice]]
+text = "Go back"
+to = "center_locked"
+
+[[choice]]
+text = "Open the door"
+to = "door_locked"
+
+[[choice]]
+text = "Break the door"
+to = "left_broken"

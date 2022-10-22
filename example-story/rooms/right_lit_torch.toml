@@ -1,0 +1,12 @@
+text = """
+You can see an exit.
+You have a lit torch in your right hand.
+"""
+
+[[choice]]
+text = "Go back"
+to = "center_lit_torch"
+
+[[choice]]
+text = "Exit"
+to = "exit"

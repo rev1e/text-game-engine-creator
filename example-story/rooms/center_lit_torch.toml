@@ -1,0 +1,13 @@
+text = """
+You see two rooms...
+One to the right, one to the left.
+You have a lit torch in your right hand...
+"""
+
+[[choice]]
+text = "Go right"
+to = "right_lit_torch"
+
+[[choice]]
+text = "Go left"
+to = "left_lit_torch"

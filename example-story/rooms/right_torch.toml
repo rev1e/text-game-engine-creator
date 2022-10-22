@@ -1,0 +1,13 @@
+text = """
+The room is completely dark...
+You can't see anything.
+You have a torch in your right hand.
+"""
+
+[[choice]]
+text = "Go back"
+to = "center_torch"
+
+[[choice]]
+text = "Light up the torch"
+to = "right_lit_torch"

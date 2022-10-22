@@ -1,0 +1,7 @@
+text = """
+!!! You won !!!
+"""
+
+[[choice]]
+text = "Play Again"
+to = "center"

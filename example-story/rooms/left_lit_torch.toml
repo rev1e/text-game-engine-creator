@@ -1,0 +1,12 @@
+text = """
+You see a broken door...
+You have a lit torch in your right hand...
+"""
+
+[[choice]]
+text = "Go back"
+to = "center_lit_torch"
+
+[[choice]]
+text = "Go through broken door"
+to = "secret_room_lit_torch"

@@ -1,0 +1,8 @@
+text = """
+The room is completely dark...
+You can't see anything.
+"""
+
+[[choice]]
+text = "Go back"
+to = "center_locked"

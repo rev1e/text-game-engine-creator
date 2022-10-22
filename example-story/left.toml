@@ -1,7 +1,0 @@
-text = """
-You are in the left room
-"""
-
-[[choice]]
-text = "Go back"
-to = "entry"

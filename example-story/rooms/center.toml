@@ -1,0 +1,12 @@
+text = """
+You see two rooms...
+One to the right, one to the left.
+"""
+
+[[choice]]
+text = "Go right"
+to = "right"
+
+[[choice]]
+text = "Go left"
+to = "left"

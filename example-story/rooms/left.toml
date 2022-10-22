@@ -1,0 +1,11 @@
+text = """
+You see a door...
+"""
+
+[[choice]]
+text = "Go back"
+to = "center"
+
+[[choice]]
+text = "Open the door"
+to = "door_locked"

@@ -1,0 +1,7 @@
+text = """
+The door is locked.
+"""
+
+[[choice]]
+text = "..."
+to = "left_locked"
