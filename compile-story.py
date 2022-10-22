@@ -62,7 +62,7 @@ for room in rooms:
         # TODO error handling
         choice["to"] = names[choice["to"]]
 
-content = { "entry": names[metadata["entry"]], "rooms": rooms }
+content = { "entry": names[metadata["entry"]], "id": metadata["id"], "rooms": rooms }
 content = json.dumps(content, separators=(',', ':'))
 
 with open(args.output, mode="wt", encoding="utf-8") as f:
