@@ -1,0 +1,7 @@
+text = """
+You are in the right room
+"""
+
+[[choice]]
+text = "Go back"
+to = "entry"

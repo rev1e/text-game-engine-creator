@@ -1,0 +1,11 @@
+text = """
+You are in the center room
+"""
+
+[[choice]]
+text = "Go left"
+to = "left"
+
+[[choice]]
+text = "Go right"
+to = "right"
