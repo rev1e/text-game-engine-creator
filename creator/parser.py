@@ -25,8 +25,10 @@ def parse(rooms, metadata, logger):
 
 	logger.log("Stage 5 - Creating output")
 
+	metadata["entry"] = names[metadata["entry"]]
+
 	return {
 		"metadata": metadata,
-		"rooms": rooms
+		"rooms": list(rooms.values())
 	}
 
