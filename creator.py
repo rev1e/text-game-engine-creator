@@ -4,6 +4,7 @@ import os, sys
 import json
 
 from creator.logger import Logger
+from creator.parser import ParserError
 import creator
 
 # parse arguments
@@ -34,7 +35,7 @@ if not args.output.endswith(".tg"):
 # parse files
 try:
 	output = creator.parse_source_directory(args.source, logger)
-except Exception as e:
+except ParserError as e:
 	logger.panic(e)
 
 logger.log("Stage 6 - Creating And Writing JSON")

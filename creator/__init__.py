@@ -1,5 +1,7 @@
 import os
 import toml
+import base64
+
 from .parser import ParserError, parse
 
 def check_source_directory(dir):
@@ -30,7 +32,7 @@ def validate_room(room):
 				raise Exception("no 'to' in choice")
 
 def parse_source_directory(dir, logger):
-	logger.log("Stage 1 - Loading Files")
+	logger.log("Stage 1 - Loading Rooms")
 
 	logger.log(f"Loading metadata.toml")
 
@@ -70,5 +72,18 @@ def parse_source_directory(dir, logger):
 			room["choices"] = room.pop("choice")
 
 		rooms[file.replace(".toml", "")] = room
+
+	images = None
+	if os.path.isdir(os.path.join(dir, "images")):
+		images = {}
+		logger.log("Stage 1.5 - Loading Images")
+		files = os.listdir(os.path.join(dir, "images"))
+		for file in files:
+			# only support png images for now
+			if not file.endswith(".png"):
+				continue
+			image_path = os.path.join(dir, "images", file)
+			with open(image_path, "rb") as f:
+				images[file] = base64.b64encode(f.read()).decode("utf-8")
 	
-	return parse(rooms, metadata, logger)
+	return parse(rooms, images, metadata, logger)

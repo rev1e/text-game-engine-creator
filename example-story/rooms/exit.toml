@@ -1,6 +1,7 @@
 text = """
 !!! You won !!!
 """
+image = "map.png"
 
 [[choice]]
 text = "Play Again"

@@ -2,6 +2,7 @@ text = """
 The room is completely dark...
 You can't see anything.
 """
+image = "test.png"
 
 [[choice]]
 text = "Go back"
